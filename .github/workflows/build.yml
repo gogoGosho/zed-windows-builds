@@ -3,6 +3,7 @@ name: Build Zed Nightly
 on:
   schedule:
     - cron: "0 0 * * *" # Runs every night at midnight UTC
+  workflow_dispatch:
   push:
     branches:
       - main
